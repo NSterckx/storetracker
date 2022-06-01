@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "707181964387",
+    "project_id": "storetracker-63b9c",
+    "storage_bucket": "storetracker-63b9c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707181964387:android:faf1dab585fe6182d35c56",
+        "android_client_info": {
+          "package_name": "be.nisse.storetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "707181964387-da895gmoofblb4bqdb91mibisgarqg0v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "be.nisse.storetracker",
+            "certificate_hash": "df32bb59a139f50db2393800ad0145557a4ba702"
+          }
+        },
+        {
+          "client_id": "707181964387-crgi10hopuil6h9jskn2lt41uiidhglb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQQCa0mWyUq7Sie_G6dZsyV5HWaHb_S08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "707181964387-crgi10hopuil6h9jskn2lt41uiidhglb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

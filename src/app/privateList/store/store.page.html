@@ -1,0 +1,133 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{name === undefined? 'Add Store' : 'Update Store'}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Store*</ion-label>
+    <ion-input type="string" [(ngModel)]="name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">City*</ion-label>
+    <ion-input type="string" [(ngModel)]="city"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Address</ion-label>
+    <ion-input type="string" [(ngModel)]="address"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Public</ion-label>
+    <ion-toggle [(ngModel)]="isPublic" ion-toggle-text ng-true-value='yes' ng-false-value='no' slot="end" name="public" color="secondary">false</ion-toggle>
+  </ion-item>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label style="width: 20%">Monday</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="startHourMonday"></ion-input>
+      <ion-label style="text-align: left">h</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="startMinuteMonday"></ion-input>
+        <ion-label style="text-align: center; margin: 10px">to</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="endHourMonday"></ion-input>
+      <ion-label style="text-align: left">h</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="endMinuteMonday"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label style="width: 20%">Tuesday</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="startHourTuesday"></ion-input>
+      <ion-label style="text-align: left">h</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="startMinuteTuesday"></ion-input>
+      <ion-label style="text-align: center; margin: 10px">to</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="endHourTuesday"></ion-input>
+      <ion-label style="text-align: left">h</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="endMinuteTuesday"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label style="width: 20%">Wednesday</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="startHourWednesday"></ion-input>
+      <ion-label style="text-align: left">h</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="startMinuteWednesday"></ion-input>
+      <ion-label style="text-align: center; margin: 10px">to</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="endHourWednesday"></ion-input>
+      <ion-label style="text-align: left">h</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="endMinuteWednesday"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label style="width: 20%">Thursday</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="startHourThursday"></ion-input>
+      <ion-label style="text-align: left">h</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="startMinuteThursday"></ion-input>
+      <ion-label style="text-align: center; margin: 10px">to</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="endHourThursday"></ion-input>
+      <ion-label style="text-align: left">h</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="endMinuteThursday"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label style="width: 20%">Friday</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="startHourFriday"></ion-input>
+      <ion-label style="text-align: left">h</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="startMinuteFriday"></ion-input>
+      <ion-label style="text-align: center; margin: 10px">to</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="endHourFriday"></ion-input>
+      <ion-label style="text-align: left">h</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="endMinuteFriday"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label style="width: 20%">Saturday</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="startHourSaturday"></ion-input>
+      <ion-label style="text-align: left">h</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="startMinuteSaturday"></ion-input>
+      <ion-label style="text-align: center; margin: 10px">to</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="endHourSaturday"></ion-input>
+      <ion-label style="text-align: left">h</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="endMinuteSaturday"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label style="width: 20%">Sunday</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="startHourSunday"></ion-input>
+      <ion-label style="text-align: left">h</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="startMinuteSunday"></ion-input>
+      <ion-label style="text-align: center; margin: 10px">to</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="endHourSunday"></ion-input>
+      <ion-label style="text-align: left">h</ion-label>
+      <ion-input style="text-align:center;background: beige; border: #1c1c1d ;margin: 10px;color:black" type="number" [(ngModel)]="endMinuteSunday"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+    <ion-button (click)="takePicture()">Add logo</ion-button>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Pictures</ion-label>
+            <ion-img [src]="fetchedURL"></ion-img>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Comments</ion-label>
+    <ion-input type="string" [(ngModel)]="comment"></ion-input>
+  </ion-item>
+
+  <ion-item>
+  <ion-buttons slot="end" class="ion-margin-horizontal">
+    <ion-button (click)="handleCreateAndUpdate()">
+      <ion-icon slot="icon-only" name="send"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  </ion-item>
+</ion-content>
+
+<script>
+
+</script>

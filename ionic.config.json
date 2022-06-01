@@ -1,0 +1,7 @@
+{
+  "name": "Storetracker",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

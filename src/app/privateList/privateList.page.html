@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Private store list
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Private store list</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item *ngFor="let store of visPrivateStores">
+    <ion-avatar slot="start">
+      <img [src]="store.image" />
+    </ion-avatar>
+    <ion-label (click)="router.navigate(['store', store.key], {relativeTo: activatedRoute})">
+      <h3>{{store.name}} - {{store.city}}</h3>
+      <p [style]=store.color>{{store.checkOpen}}</p>
+    </ion-label>
+    <ion-icon name="close-circle-outline" (click)="removeFromPrivate(store.key)"></ion-icon>
+  </ion-item>
+</ion-list>
+
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink='store'>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>
+

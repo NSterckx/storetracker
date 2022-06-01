@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Storetracker</string>
+    <string name="title_activity_main">Storetracker</string>
+    <string name="package_name">be.nisse.storetracker</string>
+    <string name="custom_url_scheme">be.nisse.storetracker</string>
+</resources>

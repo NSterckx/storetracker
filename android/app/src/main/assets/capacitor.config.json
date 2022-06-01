@@ -1,0 +1,15 @@
+{
+	"appId": "be.nisse.storetracker",
+	"appName": "Storetracker",
+	"webDir": "www",
+	"bundledWebRuntime": false,
+	"plugins": {
+		"FirebaseAuthentication": {
+			"skipNativeAuth": false,
+			"providers": [
+				"phone",
+				"google.com"
+			]
+		}
+	}
+}

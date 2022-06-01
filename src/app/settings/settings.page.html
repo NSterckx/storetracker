@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 3
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-item class="ion-margin-vertical" color="light" (click)="authService.signOut()">
+    <ion-label>Sign out</ion-label>
+  </ion-item>
+
+<ion-item>
+    <ion-label> Connected: {{connected ? 'Yes': 'No'}}</ion-label>
+</ion-item>
+  <ion-item>
+    <ion-label>Connection Type: {{connectionType}}</ion-label>
+  </ion-item>
+
+</ion-content>
